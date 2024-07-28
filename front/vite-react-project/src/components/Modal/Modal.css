@@ -1,0 +1,97 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background-color: rgba(128, 186, 255, 1);
+
+
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative; 
+
+    font-family:   "Montserrat", sans-serif;
+
+}
+
+.modal h2 {
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal label {
+    margin-bottom: 2px;
+    color: black;
+    font-weight: 500;
+}
+
+.modal input {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal button {
+    
+    margin-top: 0px;
+    
+    font-size: 14px;
+    cursor: pointer;
+   
+}
+
+.close-button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+   
+    background: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    
+}
+
+
+.submit-button{
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    width: 50%;
+    height: 25px;
+    align-self: center;
+}
+
+
+.link-to-reg{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.link-to-reg a{
+    font-style: italic;
+}
+

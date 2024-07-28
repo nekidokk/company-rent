@@ -1,0 +1,63 @@
+.AddForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 400px;
+    border: 1px solid;
+    background-color: rgba(71, 96, 187, 1);
+    position: relative;
+    padding-bottom: 50px;
+    border-radius: 10px;
+
+    margin-top: 95px;
+
+        
+}
+
+.AddForm h2{
+    font-family:   "Montserrat", sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    
+}
+
+.AddForm input{
+    font-family:   "Montserrat", sans-serif;
+    
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 330px;
+    height: 25px;
+
+    
+}
+
+.AddForm button{
+    font-family:   "Montserrat", sans-serif;
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 0.2em 1.4em;
+    font-size: 1em;
+    font-weight: 500;
+    
+    background-color: rgba(207, 244, 255, 1);
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    
+
+
+    width: 100px;
+    height: 30px;
+
+    
+}
+
+.AddForm button:hover {
+    background-color: rgb(245, 253, 255) ;
+  }

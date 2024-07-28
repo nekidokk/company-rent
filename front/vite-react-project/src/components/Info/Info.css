@@ -1,0 +1,67 @@
+button{
+    border-radius: 5px;
+    border: 1px solid;
+    /* padding: 0.6em 1.2em; */
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:  "Montserrat", sans-serif; ;
+    background-color: rgba(207, 244, 255, 1);
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+
+  
+  }
+  
+  
+  button:hover {
+    background-color: rgb(245, 253, 255);
+  }
+
+.info-main-container{
+    display: grid;
+    grid-template-columns: 400px 800px;
+    margin-top: 95px;
+    margin-left: 150px;
+    
+    gap: 50px;
+    font-family:   "Montserrat", sans-serif;
+    color: white;
+}
+
+
+
+.choose-month, .total-payment-amount, .tentants, .free-apartments{
+    background-color: rgba(71, 96, 187, 1);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+
+}
+
+.choose-month, .total-payment-amount{
+    padding-top: 25px;
+}
+
+.choose-month{
+    height: 50px;
+    
+    
+}
+.total-payment-amount{
+    height: 50px;
+}
+.tentants{
+    height: 480px;
+}
+
+.free-apartments{
+    height: 653px;
+}
+
+label{
+    font-weight: 500;
+}

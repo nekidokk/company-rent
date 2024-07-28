@@ -1,0 +1,57 @@
+
+
+.apartment-info{
+    background-color: rgba(71, 96, 187, 1);
+    width: 650px;
+    height: 150px;
+    border-radius: 15px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 25%;
+    
+    border: 0.7px solid black;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.apartment-info h1  {
+    color: white;
+    font-family:   "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    
+    margin-left: 3%;
+
+}
+
+.apartment-info p{
+    color: white;
+    font-family:   "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 3%;
+
+}
+
+.apartment-info button{
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 0.2em 1.4em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family:  "Montserrat", sans-serif; ;
+    background-color: rgba(207, 244, 255, 1);
+    cursor: pointer;
+    transition: border-color 0.25s;
+
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.apartment-info button:hover {
+    background-color: rgb(245, 253, 255) ;
+  }
