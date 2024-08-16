@@ -27,9 +27,12 @@
     margin-left: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 330px;
+    width: 320px;
     height: 25px;
 
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
     
 }
 
