@@ -11,6 +11,7 @@ export default function ApartmentField({apartment, onDelete}){
             if (!response.ok) {
                 throw new Error('Failed to delete apartment');
             }
+            console.log( response.json())
             onDelete(apartment[6]); // Вызываем функцию onDelete для удаления помещения из списка
         } catch (error) {
             console.error('Error deleting apartment:', error);
@@ -24,7 +25,7 @@ export default function ApartmentField({apartment, onDelete}){
                 <h1>{apartment[4]} {apartment[3]}, {apartment[2]} {apartment[1]}, д. {apartment[0]}</h1>
                 <p>Square: {apartment[5]} кв.м.</p>
                 <p>ID: {apartment[6]}</p>
-                <button onClick={handleDelete}>delete</button>
+              { apartment[6] == 5 ? <p>TAKEN</p> : <button onClick={handleDelete}>delete</button>}
             </div>
 
         

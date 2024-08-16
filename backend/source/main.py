@@ -83,14 +83,27 @@ async def create_apartment(apartment: Apartment):
 async def get_all_apartments():
     try:
         query = """
-        select  home_number, street.name, street_type.short_name, loc.name, loc_type.short_name, a.square, a.id
-        from public.adress 
-        join public.street on street_id = street.id
-        join public.street_type on street_type.id = street_type_id
-        join public.locality loc on loc.id = locality_id
-        join public.locality_type loc_type on loc_type.id = locality_type_id
-        join public.apartment a on a.adress_id = adress.id
-        where adress.id in (select adress_id from public.apartment)
+        SELECT home_number, street.name, street_type.short_name, loc.name, loc_type.short_name, a.square, a.id
+        FROM public.adress
+        JOIN public.street ON street_id = street.id
+        JOIN public.street_type ON street_type.id = street_type_id
+        JOIN public.locality loc ON loc.id = locality_id
+        JOIN public.locality_type loc_type ON loc_type.id = locality_type_id
+        JOIN public.apartment a ON a.adress_id = adress.id
+        WHERE adress.id IN (SELECT adress_id FROM public.apartment)
+        EXCEPT
+        SELECT home_number, street.name, street_type.short_name, loc.name, loc_type.short_name, a.square, a.id
+        FROM public.adress
+        JOIN public.street ON street_id = street.id
+        JOIN public.street_type ON street_type.id = street_type_id
+        JOIN public.locality loc ON loc.id = locality_id
+        JOIN public.locality_type loc_type ON loc_type.id = locality_type_id
+        JOIN public.apartment a ON a.adress_id = adress.id
+        WHERE adress.id IN (SELECT adress_id FROM public.apartment)
+        AND a.id IN (SELECT apartment_id FROM public.agreement);
+
+        
+        
         """
         cursor.execute(query)
         apartments = cursor.fetchall()

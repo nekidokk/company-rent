@@ -11,3 +11,10 @@
     grid-template-columns: 2fr 1fr;
     
 }
+
+.message{
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
